@@ -1,3 +1,24 @@
-p {
-    color: red;
+body {
+    background-color: #FFE2B0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none; /* removed dots in list */
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none; /* Убрали подчеркивание*/
+    font-size: 18px;  
+}
+div {       
+    background-color: green;
+    margin: 30px 50px 50px 0px; /*top right bottom left*/ /* Внешний отсуп*/
+    padding: 20px 40px 0px 0px; /* Внешний отсуп*/
+    border: 3px solid black; /* width style color*/
 }
