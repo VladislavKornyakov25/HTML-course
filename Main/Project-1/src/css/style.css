@@ -85,6 +85,7 @@ a {
 
 .section-description__icon-box {
     text-align: center;
+    margin-bottom: 20px;
 }
 .section-description__icon-box img {
     margin-right: 76px;
@@ -92,4 +93,22 @@ a {
 
 .section-description__icon-box img:last-child {
     margin-right: 0px;
+}
+
+.section-description__title {
+    font-size: 96px;
+    margin: 0;
+    text-align: center;
+}
+
+.red {
+    color: #f15b40;
+}
+
+.section-description__text {
+    font-size: 18px;
+    margin: 0 ;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
 }
