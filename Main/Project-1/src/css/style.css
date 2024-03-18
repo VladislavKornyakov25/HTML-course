@@ -83,6 +83,10 @@ a {
     margin: 0;        
 }
 
+.section-description {
+    margin-bottom: 20px;
+}
+
 .section-description__icon-box {
     text-align: center;
     margin-bottom: 20px;
@@ -110,5 +114,20 @@ a {
     margin: 0 ;
     text-align: center;
     width: 1000px;
+    margin: 0 auto;
+}
+
+.section-map {
+
+}
+
+.section-map__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+iframe {
+    display: block;
     margin: 0 auto;
 }
