@@ -1,7 +1,46 @@
 * {
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Philosopher';
+    src: local('Philosopher');
+    src: url(../font/Philosopher-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto!';
+    src: local('Roboto');
+    src: url('../font/Roboto-Regular.eot');
+    src: url('../font/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Regular.woff') format('woff'),
+         url('../font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Roboto!';
+    src: local('Roboto');
+    src: url('../font/Roboto-Regular.eot');
+    src: url('../font/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Regular.woff') format('woff'),
+         url('../font/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../font/Roboto-Bold.eot');
+    src: url('../font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Roboto-Bold.woff') format('woff'),
+    url('../font/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Roboto!';
+}
 body {
     background-color: #FFE2B0;
 }
@@ -34,6 +73,8 @@ a {
     color: black;
     text-decoration: none; /* Убрали подчеркивание*/
     font-size: 18px;  
+    font-weight: 700;
+
 }
 
 .section-about {
@@ -71,8 +112,8 @@ a {
 }
 
 .section-about__title {
-    font-size: 36px;    
-    font-family: Philosopher regular;    
+    font-size: 36px;   
+    font-family: 'Philosopher';
     margin: 0;
     margin-bottom: 9px
 }
@@ -101,6 +142,7 @@ a {
 
 .section-description__title {
     font-size: 96px;
+    font-family: 'Philosopher';
     margin: 0;
     text-align: center;
 }
@@ -117,17 +159,33 @@ a {
     margin: 0 auto;
 }
 
-.section-map {
+footer {
+    height: 80px;
+}
 
+.section-map {
+    margin-bottom: 20px;
 }
 
 .section-map__title {
     margin-bottom: 20px;
     text-align: center;
     font-size: 36px;
+    font-family: 'Philosopher';
 }
 
 iframe {
     display: block;
     margin: 0 auto;
+}
+
+.line {
+    border-top: 1px solid #999999;
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Roboto!';
 }
