@@ -1,0 +1,16 @@
+@import "resets.scss"
+@import "normalizes.scss"
+
+$main-color: #F28B64
+@mixin box
+   width: 400px
+   height: 400px
+   background-color: grey
+
+.block
+   @include box
+   &__text
+      color: $main-color
+.block-2
+   @include box
+   margin-top: 20px
