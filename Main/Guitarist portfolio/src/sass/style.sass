@@ -14,7 +14,7 @@ $color-grey: #E2E2E2
 
 .main-section 
    position: relative
-   height: 800px
+   min-height: 800px
    background-color: #F0F0F0
    padding-top: 16px
    overflow: hidden
@@ -33,11 +33,11 @@ $color-grey: #E2E2E2
    &__first-elipse
       position: absolute
       top: 129px
-      right: 34px
+      right: 80px
    &__second-elipse
       position: absolute      
-      right: -80px
-      top: 670px
+      right: -120px
+      top: 650px
 
 .nav-menu
    &__list
@@ -137,7 +137,7 @@ $color-grey: #E2E2E2
       width: 200px
       height: 60px
       background-color: $color-orange
-      box-shadow: 0 px 4px 4px rgba(0, 0 ,0, 0.25)
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
       border-radius: 100px
       border: none 
       font-size: 18px
@@ -149,6 +149,12 @@ $color-grey: #E2E2E2
          margin-right: 12px
    &__text
       font-size: 16px
+   &__text-big
+      font-size: 18px
+   &__number
+      font-size: 48px
+      font-weight: bold
+
 .elipse
    width: 194px
    height: 194px
@@ -165,8 +171,103 @@ $color-grey: #E2E2E2
       height: 129.33px
       background: #f0f0f0
       border-radius: 150px
-      &-big
+      &_big
          width: 188px
          height: 188px
+      &_third         
+         background: #ffffff
+     
    
-         
+.second-section
+   position: relative
+   min-height: 700px   
+   padding-top: 32px
+   &__title
+      margin-bottom: 40px    
+   &__cards-container
+      display: inline-flex
+      justify-content: space-between
+      margin-bottom: 25px
+   &__cards-item
+      margin-right: 30px 
+      &:last-child
+         margin-right: 0
+   &__icons-container
+      display: flex
+      justify-content: space-evenly
+      margin-bottom: 25px
+   
+      
+   //    position: relative
+   //    display: inline-flex
+   //    justify-content: space-around
+   //    align-items: end
+   //    width: 360px
+   //    height: 360px
+   //    border-radius: 10px
+           
+   //    box-shadow: 0px 4px 4px rgba(0, 0 ,0, 0.25)
+   //    img
+   //       height: 335px
+   //       width: 197px
+   //    &:last-child
+   //       margin-right: 0
+   //    div         
+   //       align-self: center  
+   //       text-align: center   
+   //       height: 40px
+   //       font-size: 36px
+   //       font-weight: bold
+   //       transform: rotate(90deg)
+      
+   // &__icons-item
+   //    display: flex
+   //    justify-content: columns
+   //    align-items: center
+   &__first-elipse
+      position: absolute
+      top: 80px
+      right: -60px
+      z-index: -1
+   &__second-elipse
+      position: absolute
+      top: 364px
+      left:-60px
+      z-index: -1
+
+.cards-item
+   position: relative
+   width: 360px
+   height: 360px
+   border-radius: 10px
+   display: flex
+   align-items: flex-end
+   box-shadow: 0px 4px 4px rgba(0, 0 ,0, 0.25)
+   &__text
+      width: 280px
+      font-size: 36px
+      text-align: center
+      transform: rotate(90deg)
+      position: absolute
+      top: 144px
+      right: -45px
+
+.icons-item
+   display: inline-flex
+   align-items: center
+   &__img
+      margin-right: 20px
+      width: 80px
+   &__text
+      font-size: 18px
+      span
+         font-size: 48px
+
+
+
+.orange 
+   background: $color-orange
+.blue
+   background: $color-blue
+.grey
+   background: $color-grey        
