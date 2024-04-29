@@ -364,7 +364,25 @@ table {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-family: "Monserrat";
+  font-weight: regular;
+}
+
 .container {
+  position: relative;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -412,6 +430,10 @@ table {
 }
 .nav-menu__list-item:last-child {
   margin-right: 0px;
+}
+.nav-menu__list-item a {
+  text-decoration: none;
+  color: black;
 }
 
 .left-wrapper {
@@ -499,6 +521,7 @@ table {
 
 .title {
   font-size: 72px;
+  font-weight: bold;
   position: relative;
 }
 .title__hr {
@@ -522,6 +545,7 @@ table {
   border-radius: 100px;
   border: none;
   font-size: 18px;
+  font-weight: bold;
   color: white;
 }
 .buttons__icon-btn {
@@ -618,6 +642,7 @@ table {
 .cards-item__text {
   width: 280px;
   font-size: 36px;
+  font-weight: bold;
   text-align: center;
   transform: rotate(90deg);
   position: absolute;
@@ -638,6 +663,7 @@ table {
 }
 .icons-item__text span {
   font-size: 48px;
+  font-weight: bold;
 }
 
 .orange {
@@ -650,4 +676,71 @@ table {
 
 .grey {
   background: #E2E2E2;
+}
+
+.third-section {
+  position: relative;
+  min-height: 640px;
+  background-color: #F0F0F0;
+  overflow: hidden;
+}
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 167px;
+  padding-top: 66px;
+}
+.third-section__right-wrapper {
+  max-width: 480px;
+}
+.third-section__left-title {
+  margin-top: 30px;
+  z-index: 5;
+}
+.third-section__right-title {
+  margin-bottom: 20px;
+}
+.third-section__text {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.third-section__img {
+  z-index: 1;
+  position: absolute;
+  top: 250px;
+  left: 15px;
+}
+.third-section__elipse {
+  position: absolute;
+  top: 140px;
+  left: 110px;
+}
+.third-section__second-elipse {
+  position: absolute;
+  top: -120px;
+  right: -120px;
+}
+
+.title__hr_top {
+  bottom: 75px;
+}
+
+.footer {
+  position: relative;
+}
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0px;
+}
+.footer__title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
