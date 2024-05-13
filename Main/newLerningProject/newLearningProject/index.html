@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>MY NEW LEARNING PROJECT</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h2>Navigation</h2>
+            </nav>
+        </header>
+        
+        <form action="#" method="post" enctype="multipart/form-data"
+            style="
+                border: 1px solid black; 
+                box-shadow: 5px 5px 10px 5px grey;
+                width: 50%; 
+                padding: 10px 10px 10px 10px; 
+                border-radius: 10px;
+                margin: 10px; 
+                ">
+            <div>
+                <p><b>Name:</b></p>
+                <input 
+                    type="text" 
+                    tabindex="1"
+                    name="username" 
+                    value="" 
+                    placeholder="login"
+                    required/>
+            </div>
+            <div>
+                <p><b>Password:</b></p>
+                <input 
+                    type="password" 
+                    tabindex="2"
+                    name="userpass"
+                    required/>
+            </div>
+            <div>
+                <p><b>Phone:</b></p>
+                <input 
+                    type="tel" 
+                    tabindex="3"
+                    name="phone"
+                    required/>
+            </div>
+            <div>
+                <p><b>Sex:</b></p>
+                <div>
+                    <input tabindex="4" type="radio" name="sex" value="man" checked/>
+                    Man
+                </div>
+                <div>
+                    <input tabindex="4" type="radio" name="sex" value="women"/>
+                    Woman
+                </div>
+            </div> 
+                           
+            <div>
+                <p><b>Имущество:</b></p>
+                <div><input tabindex="5" type="checkbox" name="bike" value="yes" checked>Bike</div>
+                <div><input tabindex="6" type="checkbox" name="car" value="yes">Car</div>
+                <div><input tabindex="7"type="checkbox" name="Apartments" value="yes" disabled>Apartments</div>
+            </div>
+            <div>
+                <p><b>Advansed info:</b></p>
+                <textarea tabindex="8" name="advanced-info" id="0001"></textarea>
+            </div>            
+            <div>
+                <p><b>Attach photo:</b></p>
+                <p><input tabindex="9" type="file" name="photo"></p>
+            </div> 
+            <div>
+                <p><b>Favorite color:</b></p>
+                <select tabindex="10" name="color">                    
+                    <option value="red">red</option>
+                    <option value="blue">blue</option>
+                    <option value="yellow" selected>yellow</option>
+                    <option value="black">black</option>
+                </select>
+            </div>            
+            <div>
+                <p><b>Actions:</b></p>
+                <button tabindex="11" type="submit">Submit</button>
+                <button tabindex="12" type="reset">Reset</button>
+            </div>
+        </form>
+
+        <div>
+            <div class="example-block">
+                <p>
+                    <a href="https://google.com" class="link">
+                        Lorem </a>, ipsum dolor sit amet consectetur adipisicing elit. Iure molestias dolores quas ea itaque ex amet, laudantium, aliquid dolorem voluptatibus corrupti ad similique! Quam est officiis quibusdam voluptates dolorum blanditiis.                    
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere iure quos sequi enim? Fuga accusantium inventore atque ut eveniet, voluptatem excepturi libero autem quia molestias ex, veritatis architecto non.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore saepe nisi ex excepturi laborum sapiente soluta vel natus mollitia adipisci, vitae quae magnam a vero, alias optio cum, doloremque voluptas?
+                </p>
+            </div> 
+            <form action="#">
+                <input type="text-input" class="text-input"/>
+                <button class="button" type="submit">Submit</button>
+            </form>
+           
+        </div>
+        <h2>ПСЕВДОКЛАССЫ</h2>
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptates quis culpa tenetur vero! Eligendi enim dolor illo hic, sint maiores suscipit non, atque cum porro accusamus itaque, repellat quo.
+        </p>
+        <ul class="list">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </body>
+</html>
