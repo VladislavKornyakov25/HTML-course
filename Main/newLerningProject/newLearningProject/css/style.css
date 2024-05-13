@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------------*/
 body {
     padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .example-block {    
     margin-bottom: 30px;
@@ -179,4 +180,37 @@ h2 {
     /*задает стиль первой буквы текста*/
     color: red;
     font-size: 50px;
+}
+
+.block {
+    border: 5px solid red;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 800px;
+    margin-bottom: 20px;
+}
+.block div {
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.block__1 {
+    background-color: yellow;    
+}
+
+
+.block__2 {
+    background-color: purple;   
+    color: white;
+    position: relative; /*положение элемента 
+    устанавливается относительно его изначального положения в коде */
+    left: 50px;
+    top: 60px; 
+
+}
+
+.block__3 {
+    background-color: rgb(32, 191, 135);    
 }
