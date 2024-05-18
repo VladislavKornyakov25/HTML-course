@@ -19,14 +19,14 @@
 }
 
 /*Обнуление*/
-/* line 62, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 117, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-/* line 68, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 123, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 *,
 *:before,
 *:after {
@@ -35,19 +35,19 @@
   box-sizing: border-box;
 }
 
-/* line 76, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 131, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 :focus,
 :active {
   outline: none;
 }
 
-/* line 81, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 136, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 a:focus,
 a:active {
   outline: none;
 }
 
-/* line 86, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 141, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 nav,
 footer,
 header,
@@ -55,7 +55,7 @@ aside {
   display: block;
 }
 
-/* line 93, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 148, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 html,
 body {
   height: 100%;
@@ -69,51 +69,51 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 106, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 161, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 input,
 button,
 textarea {
   font-family: "PT Sans";
 }
 
-/* line 112, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 167, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 input::-ms-clear {
   display: none;
 }
 
-/* line 116, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 171, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 button {
   cursor: pointer;
 }
 
-/* line 120, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 175, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 125, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 180, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 a,
 a:visited {
   text-decoration: none;
 }
 
-/* line 130, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 185, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 134, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 189, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 ul li {
   list-style: none;
 }
 
-/* line 138, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 193, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 img {
   vertical-align: top;
 }
 
-/* line 142, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 197, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 h1,
 h2,
 h3,
@@ -125,20 +125,42 @@ h6 {
 }
 
 /*--------------------*/
-/* line 156, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 208, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* line 217, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .container {
   max-width: 880px;
   margin: 0 auto;
   width: 100%;
 }
 
-/* line 163, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+@media (max-width: 892px) {
+  /* line 217, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 992.98px) {
+  /* line 217, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+/* line 233, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 header {
   padding: 29px 0 33px 0;
   background-color: #fff;
 }
 
-/* line 168, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 238, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .header-top {
   display: -webkit-box;
   display: -moz-box;
@@ -149,7 +171,7 @@ header {
   justify-content: space-between;
 }
 
-/* line 172, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 242, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .header-top__link {
   font-size: 15px;
   font-family: Akzidenz-Grotesk BQ Condensed;
@@ -159,7 +181,7 @@ header {
   text-decoration: underline;
 }
 
-/* line 182, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 252, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .header-top-lang {
   display: -webkit-box;
   display: -moz-box;
@@ -169,12 +191,12 @@ header {
   font-size: 0;
 }
 
-/* line 185, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 255, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .header-top-lang__item {
   display: block;
   line-height: 19px;
   color: #000;
-  font-size: 10px;
+  font-size: 14px;
   text-transform: uppercase;
   font-family: Bebas Neue;
   letter-spacing: 1px;
@@ -182,28 +204,61 @@ header {
   margin-right: 10px;
 }
 
-/* line 196, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 266, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .header-top-lang__item.active {
   background-color: #000;
   color: #fff;
 }
 
-/* line 203, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 273, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .header-bottom {
+  margin: -10px 0px 0px 0px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   font-size: 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* line 206, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 280, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .header-bottom__column {
   flex: 0 0 33.333%;
 }
 
-/* line 213, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 284, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.header-bottom__column--right .header-bottom-menu__list {
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+/* line 290, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.header-bottom__column--right .header-bottom-menu__list li {
+  margin: 0px 0px 0px 45px !important;
+}
+
+/* line 293, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.header-bottom__column--right .header-bottom-menu__list li:first-child {
+  margin: 0;
+}
+
+@media (max-width: 892px) {
+  /* line 290, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .header-bottom__column--right .header-bottom-menu__list li {
+    margin: 0px 0px 0px 20px !important;
+  }
+}
+
+/* line 308, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .header-bottom-menu__list {
   display: -webkit-box;
   display: -moz-box;
@@ -211,10 +266,26 @@ header {
   display: -webkit-flex;
   display: flex;
   font-size: 0;
-  justify-content: space-between;
 }
 
-/* line 218, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+/* line 311, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.header-bottom-menu__list li {
+  margin: 0px 45px 0px 0px;
+}
+
+/* line 314, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.header-bottom-menu__list li:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+@media (max-width: 892px) {
+  /* line 311, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .header-bottom-menu__list li {
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+/* line 325, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
 .header-bottom-menu__link {
   font-size: 15px;
   font-family: Akzidenz-Grotesk BQ Condensed;
@@ -223,6 +294,98 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #000;
+}
+
+/* line 336, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.header-logo {
+  display: block;
+  text-align: center;
+}
+
+/* line 340, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.header-logo__text {
+  display: block;
+  font-family: Bebas Neue;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.0em;
+  color: #000000;
+}
+
+/* line 350, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.header-logo__image {
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 22px;
+}
+
+/* line 357, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+.header-menu__icon {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  /* line 362, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .header-menu__icon {
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  /* line 372, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .header-menu__icon span {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    top: 8px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  /* line 381, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .header-menu__icon span:first-child {
+    top: 0;
+  }
+  /* line 385, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .header-menu__icon span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+  /* line 392, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .header-menu__icon.active span {
+    -webkit-transition: scale(0);
+    -moz-transition: scale(0);
+    -ms-transition: scale(0);
+    -o-transition: scale(0);
+    transition: scale(0);
+  }
+  /* line 395, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .header-menu__icon.active span:first-child {
+    -webkit-transition: rotate(-45deg);
+    -moz-transition: rotate(-45deg);
+    -ms-transition: rotate(-45deg);
+    -o-transition: rotate(-45deg);
+    transition: rotate(-45deg);
+    top: 8px;
+  }
+  /* line 400, ../../../../../Projects/html/1/Main/PrimeOne/scss/style.scss */
+  .header-menu__icon.active span:last-child {
+    -webkit-transition: rotate(45deg);
+    -moz-transition: rotate(45deg);
+    -ms-transition: rotate(45deg);
+    -o-transition: rotate(45deg);
+    transition: rotate(45deg);
+    bottom: 8px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
