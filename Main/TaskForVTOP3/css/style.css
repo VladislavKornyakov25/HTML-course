@@ -467,19 +467,25 @@ table {
   }
 }
 
-/* line 32, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 52, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 html {
   font-family: "Lexend";
   font-weight: 400;
 }
 
-/* line 37, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 57, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 body {
   background-color: #110A1D;
   position: relative;
 }
 
-/* line 41, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 60, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 64, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .ellipse {
   position: absolute;
   z-index: -1;
@@ -495,7 +501,7 @@ body {
   filter: blur(100px);
 }
 
-/* line 54, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 77, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .circle {
   position: absolute;
   z-index: -1;
@@ -508,17 +514,22 @@ body {
   filter: blur(200px);
 }
 
-/* line 65, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 88, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .marquee {
   animation: scroll 20s linear infinite;
 }
 
-/* line 67, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 90, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .reverse {
   animation-direction: reverse;
 }
 
-/* line 71, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 93, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.hide {
+  display: none;
+}
+
+/* line 95, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .background-wrap {
   position: relative;
   display: flex;
@@ -527,7 +538,7 @@ body {
   flex-direction: column;
 }
 
-/* line 77, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 101, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .background-wrap:before, .background-wrap:after {
   height: 10%;
   top: 0;
@@ -537,7 +548,7 @@ body {
   pointer-events: none;
 }
 
-/* line 84, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 108, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .background-wrap__items {
   flex-shrink: 0;
   display: flex;
@@ -547,7 +558,7 @@ body {
   flex-direction: column;
 }
 
-/* line 91, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 115, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .background-wrap .item {
   flex: 0 0 auto;
   width: 99px;
@@ -558,7 +569,7 @@ body {
   transition: all 0.1s ease-in-out;
 }
 
-/* line 100, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 124, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .container {
   position: relative;
   max-width: 1640px;
@@ -566,35 +577,36 @@ body {
   margin-bottom: 16px;
 }
 
-/* line 105, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 132, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .container .background-banner {
   z-index: -1;
   position: absolute;
   top: 64px;
-  left: 685px;
-  width: 333px;
+  left: -100px;
+  width: 1920px;
   height: 1134px;
   display: flex;
   flex-direction: columns;
-  opacity: 70%;
+  justify-content: center;
+  mask-image: linear-gradient(to top, transparent, #000);
 }
 
-/* line 115, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 144, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .container .background-banner__column {
   z-index: 0;
   position: relative;
-  width: 210px;
+  width: 110px;
   margin-right: 10px;
   opacity: 70%;
   overflow: hidden;
 }
 
-/* line 122, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 151, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .container .background-banner__column:last-child {
   margin-right: 0px;
 }
 
-/* line 126, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 155, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .header-container {
   z-index: 7;
   margin-top: 16px;
@@ -609,37 +621,31 @@ body {
   justify-content: space-between;
 }
 
-/* line 140, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 169, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .nav-menu__list {
   display: flex;
   flex-direction: row;
 }
 
-/* line 143, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 172, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .nav-menu__list-item {
   margin-right: 32px;
   font-size: 16px;
   line-height: 20px;
 }
 
-/* line 147, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 176, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .nav-menu__list-item:last-child {
   margin-right: 0px;
 }
 
-/* line 149, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.nav-menu__list-item a {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* line 153, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 179, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .buttons-section {
   display: flex;
   flex-direction: row;
 }
 
-/* line 156, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 182, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .buttons-section__item {
   display: flex;
   align-items: center;
@@ -653,44 +659,38 @@ body {
   background-color: #110A1D;
 }
 
-/* line 167, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 193, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .buttons-section__item:last-child {
   margin-right: 0;
   border: none;
 }
 
-/* line 171, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 197, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .lang-box {
   display: flex;
   align-content: center;
 }
 
-/* line 174, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.lang-box a {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* line 178, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 201, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .lang-box a img {
   width: 15px;
   height: 15px;
   margin-right: 2px;
 }
 
-/* line 183, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 207, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .active {
   background: #478BF9 !important;
 }
 
-/* line 186, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 210, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section {
   position: relative;
   max-width: 1920px;
   height: 960px;
 }
 
-/* line 191, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 215, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper {
   position: absolute;
   top: 296px;
@@ -700,7 +700,7 @@ body {
   font-weight: 500;
 }
 
-/* line 198, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 222, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper h1 {
   margin-bottom: 24px;
   line-height: 96px;
@@ -708,12 +708,12 @@ body {
   font-size: 96px;
 }
 
-/* line 203, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 227, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper h1 span {
   color: #478BF9;
 }
 
-/* line 206, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 230, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper p {
   font-size: 32px;
   color: #fff;
@@ -721,7 +721,7 @@ body {
   margin-bottom: 48px;
 }
 
-/* line 211, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 235, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper div {
   display: inline-flex;
   align-items: center;
@@ -732,14 +732,14 @@ body {
   border-radius: 48px;
 }
 
-/* line 220, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.main-section__left-wrapper div span {
+/* line 244, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.main-section__left-wrapper div a span {
   color: #fff;
   font-size: 24px;
   font-weight: 600;
 }
 
-/* line 225, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 249, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper {
   position: absolute;
   top: 140px;
@@ -748,7 +748,7 @@ body {
   height: 659px;
 }
 
-/* line 231, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 255, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper h2 {
   color: #fff;
   text-align: center;
@@ -757,28 +757,67 @@ body {
   margin-bottom: 24px;
 }
 
-/* line 237, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 261, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container {
+  position: relative;
+  z-index: 6;
   width: 531px;
   height: 595px;
   border: 3px solid #478BF9;
   border-radius: 100px;
   padding: 24px;
+  padding-right: 15px;
   overflow: hidden;
-  overflow-y: auto;
   background: rgba(255, 255, 255, 0.12) !important;
-  scrollbar-width: thin;
-  scrollbar-color: #478BF9 #fff;
 }
 
-/* line 249, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.main-section__right-wrapper .blog-container__item {
+/* line 272, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.main-section__right-wrapper .blog-container-items {
+  position: relative;
+  width: 492px;
+  height: 571px;
+  overflow: hidden;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+/* line 31, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.main-section__right-wrapper .blog-container-items::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* line 34, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.main-section__right-wrapper .blog-container-items::-webkit-scrollbar-track {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  margin-right: 20px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+}
+
+/* line 42, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.main-section__right-wrapper .blog-container-items::-webkit-scrollbar-thumb {
+  height: 10px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: content-box;
+  border-radius: 7px;
+  background-color: #478BF9;
+}
+
+/* line 49, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.main-section__right-wrapper .blog-container-items::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* line 280, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.main-section__right-wrapper .blog-container-items__item {
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 467px;
-  height: 167px;
+  height: 146px;
   background: #1E1231;
   border-radius: 100px;
   color: #fff;
@@ -786,21 +825,21 @@ body {
   margin-bottom: 16px;
 }
 
-/* line 261, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.main-section__right-wrapper .blog-container__item p {
+/* line 292, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.main-section__right-wrapper .blog-container-items__item p {
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 14px;
 }
 
-/* line 266, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.main-section__right-wrapper .blog-container__item span {
+/* line 297, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.main-section__right-wrapper .blog-container-items__item span {
   font-size: 14px;
   opacity: 60%;
 }
 
-/* line 270, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 301, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 footer {
   position: relative;
   max-width: 1920px;
@@ -812,7 +851,7 @@ footer {
   background: #1E1231;
 }
 
-/* line 281, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 312, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section {
   position: relative;
   display: flex;
@@ -822,65 +861,65 @@ footer {
   margin-bottom: 40px;
 }
 
-/* line 288, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 319, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column {
   margin-right: 217px;
 }
 
-/* line 290, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 321, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column li {
   margin-right: 40px;
 }
 
-/* line 292, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 323, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column li:first-child {
   text-decoration: underline !important;
   color: #478BF9 !important;
 }
 
-/* line 295, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 326, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column:last-child {
   margin-right: 0;
 }
 
-/* line 299, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 330, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column .social-media-block__title h3 {
   text-align: right;
   color: #fff;
   margin-bottom: 14px;
 }
 
-/* line 303, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 334, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column .social-media-block__title img {
   background: purple;
 }
 
-/* line 306, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 337, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column .social-media-block__icons img {
   margin-right: 8px;
   width: 32px;
   height: 32px;
 }
 
-/* line 310, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 341, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column .social-media-block__icons img:hover {
   background-color: red;
   border-radius: 15px;
 }
 
-/* line 313, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 344, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column .social-media-block__icons:last-child {
   margin-right: 0;
 }
 
-/* line 315, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 346, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .copyright {
   position: relative;
   margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 319, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 350, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .copyright p {
   margin-top: 8px;
   text-align: center;

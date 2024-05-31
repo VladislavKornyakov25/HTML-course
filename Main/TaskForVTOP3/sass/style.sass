@@ -27,7 +27,27 @@
 
     to
         transform: translateY(calc(-100% - 20px))
-       
+@mixin scrollbar()
+    &::-webkit-scrollbar 
+        width: 10px       
+    
+    &::-webkit-scrollbar-track
+        margin-top: 96px
+        margin-bottom: 96px  
+        margin-right: 20px
+        height: 10px      
+        background-color: rgba(255,255,255, 0.12)
+        border-radius: 10px
+    
+    &::-webkit-scrollbar-thumb 
+        height: 10px
+        border: 4px solid rgba(0, 0, 0, 0)
+        background-clip: content-box
+        border-radius: 7px
+        background-color: #478BF9
+            
+    &::-webkit-scrollbar-button               
+        display: none
 
 html
    font-family: "Lexend"  
@@ -37,7 +57,10 @@ html
 body
     background-color: #110A1D
     position: relative
-    
+a
+    text-decoration: none
+    color: #fff  
+ 
 .ellipse
     position: absolute
     z-index: -1
@@ -67,7 +90,8 @@ body
 .reverse 
   animation-direction: reverse
 
-
+.hide 
+    display: none
 .background-wrap 
     position: relative
     display: flex
@@ -102,20 +126,25 @@ body
     max-width: 1640px
     margin: 0 auto
     margin-bottom: 16px
-    .background-banner   
+    
+      
+                  
+    .background-banner
         z-index: -1     
         position: absolute
         top: 64px
-        left: 685px        
-        width: 333px
+        left: -100px        
+        width: 1920px
         height: 1134px
         display: flex
         flex-direction: columns
-        opacity: 70%        
+        justify-content: center
+        mask-image: linear-gradient(to top, transparent, #000) 
+        
         &__column 
             z-index: 0           
             position: relative
-            width: 210px
+            width: 110px
             margin-right: 10px
             opacity: 70%
             overflow: hidden
@@ -145,10 +174,7 @@ body
         font-size: 16px   
         line-height: 20px     
         &:last-child
-            margin-right: 0px
-        a
-            text-decoration: none
-            color: #fff 
+            margin-right: 0px       
 
 .buttons-section    
     display: flex
@@ -170,15 +196,13 @@ body
 
 .lang-box
     display: flex
-    align-content: center      
+    align-content: center     
     a
-        text-decoration: none
-        color: #fff
-
         img
             width: 15px
             height: 15px
-            margin-right: 2px      
+            margin-right: 2px     
+
 
 .active
     background: #478BF9 !important
@@ -214,13 +238,13 @@ body
             justify-content: center
             width: 393px
             height: 72px
-            padding: 20px 72px
-            
+            padding: 20px 72px            
             border-radius: 48px
-            span
-                color: #fff  
-                font-size: 24px
-                font-weight: 600
+            a
+                span
+                    color: #fff  
+                    font-size: 24px
+                    font-weight: 600
 
     &__right-wrapper
         position: absolute
@@ -235,29 +259,36 @@ body
             font-weight: 600
             margin-bottom: 24px
         .blog-container
+            position: relative
+            z-index: 6
             width: 531px
             height: 595px
             border: 3px solid #478BF9
             border-radius: 100px
-            padding: 24px            
+            padding: 24px
+            padding-right: 15px 
+            overflow: hidden
+            background:rgba(255, 255, 255, 0.12) !important
+        .blog-container-items
+            position: relative
+            width: 492px
+            height: 571px            
             overflow: hidden
             overflow-y: auto
-            background:rgba(255, 255, 255, 0.12) !important           
-            scrollbar-width: thin            
-            scrollbar-color: #478BF9 #fff
-            
+            padding-right: 20px
+            @include scrollbar()
             &__item
                 z-index: 2
                 display: flex
                 flex-direction: column 
                 justify-content: center                
                 width: 467px
-                height: 167px
-                background: #1E1231
+                height: 146px
+                background: #1E1231                
                 border-radius: 100px
                 color: #fff
                 padding: 16px 64px
-                margin-bottom: 16px                
+                margin-bottom: 16px
                 p
                     font-size: 24px
                     font-weight: 400
