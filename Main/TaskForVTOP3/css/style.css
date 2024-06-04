@@ -458,6 +458,13 @@ table {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Futura PT Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/FuturaCyrillicMedium.ttf");
+}
+
 @keyframes scroll {
   from {
     transform: translateY(0);
@@ -467,30 +474,95 @@ table {
   }
 }
 
-/* line 52, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 80, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 html {
   font-family: "Lexend";
   font-weight: 400;
 }
 
-/* line 57, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 84, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 body {
   background-color: #110A1D;
+}
+
+/* line 87, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+body .background-banner {
+  z-index: -1;
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  left: 100px;
+  bottom: 0;
+  right: 0;
+  max-width: 1920px;
+  height: 1134px;
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+  mask-image: linear-gradient(to top, transparent, #000);
+}
+
+/* line 102, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+body .background-banner__column {
+  z-index: 0;
   position: relative;
+  width: 110px;
+  margin-right: 10px;
+  opacity: 70%;
+  overflow: hidden;
 }
 
-/* line 60, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-a {
-  text-decoration: none;
-  color: #fff;
+/* line 109, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+body .background-banner__column:last-child {
+  margin-right: 0px;
 }
 
-/* line 64, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.ellipse {
+/* line 111, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+body .background-banner__column .background-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  gap: 24px;
+  flex-direction: column;
+}
+
+/* line 117, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+body .background-banner__column .background-wrap:before, body .background-banner__column .background-wrap:after {
+  height: 10%;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* line 124, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+body .background-banner__column .background-wrap__items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 24px;
+  counter-reset: item;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/* line 131, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+body .background-banner__column .background-wrap .item {
+  flex: 0 0 auto;
+  width: 99px;
+  height: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+
+/* line 139, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+body .ellipse {
   position: absolute;
   z-index: -1;
   top: -82.74px;
-  left: 0;
+  left: 400px;
   transform: rotate(-54.31deg);
   width: 226px;
   height: 1302.47px;
@@ -501,12 +573,12 @@ a {
   filter: blur(100px);
 }
 
-/* line 77, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.circle {
+/* line 152, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+body .circle {
   position: absolute;
   z-index: -1;
   top: 570px;
-  left: 1505px;
+  left: 1700px;
   width: 574px;
   height: 574px;
   border-radius: 50%;
@@ -514,62 +586,28 @@ a {
   filter: blur(200px);
 }
 
-/* line 88, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 163, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 167, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .marquee {
   animation: scroll 20s linear infinite;
 }
 
-/* line 90, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 169, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .reverse {
   animation-direction: reverse;
 }
 
-/* line 93, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 172, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .hide {
   display: none;
 }
 
-/* line 95, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.background-wrap {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  gap: 24px;
-  flex-direction: column;
-}
-
-/* line 101, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.background-wrap:before, .background-wrap:after {
-  height: 10%;
-  top: 0;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* line 108, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.background-wrap__items {
-  flex-shrink: 0;
-  display: flex;
-  gap: 24px;
-  counter-reset: item;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-/* line 115, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.background-wrap .item {
-  flex: 0 0 auto;
-  width: 99px;
-  height: 99px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.1s ease-in-out;
-}
-
-/* line 124, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 175, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .container {
   position: relative;
   max-width: 1640px;
@@ -577,36 +615,7 @@ a {
   margin-bottom: 16px;
 }
 
-/* line 132, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.container .background-banner {
-  z-index: -1;
-  position: absolute;
-  top: 64px;
-  left: -100px;
-  width: 1920px;
-  height: 1134px;
-  display: flex;
-  flex-direction: columns;
-  justify-content: center;
-  mask-image: linear-gradient(to top, transparent, #000);
-}
-
-/* line 144, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.container .background-banner__column {
-  z-index: 0;
-  position: relative;
-  width: 110px;
-  margin-right: 10px;
-  opacity: 70%;
-  overflow: hidden;
-}
-
-/* line 151, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.container .background-banner__column:last-child {
-  margin-right: 0px;
-}
-
-/* line 155, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 181, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .header-container {
   z-index: 7;
   margin-top: 16px;
@@ -621,31 +630,31 @@ a {
   justify-content: space-between;
 }
 
-/* line 169, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 195, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .nav-menu__list {
   display: flex;
   flex-direction: row;
 }
 
-/* line 172, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 198, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .nav-menu__list-item {
   margin-right: 32px;
   font-size: 16px;
   line-height: 20px;
 }
 
-/* line 176, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 202, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .nav-menu__list-item:last-child {
   margin-right: 0px;
 }
 
-/* line 179, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 205, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .buttons-section {
   display: flex;
   flex-direction: row;
 }
 
-/* line 182, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 208, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .buttons-section__item {
   display: flex;
   align-items: center;
@@ -659,38 +668,38 @@ a {
   background-color: #110A1D;
 }
 
-/* line 193, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 219, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .buttons-section__item:last-child {
   margin-right: 0;
   border: none;
 }
 
-/* line 197, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 223, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .lang-box {
   display: flex;
   align-content: center;
 }
 
-/* line 201, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 227, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .lang-box a img {
   width: 15px;
   height: 15px;
   margin-right: 2px;
 }
 
-/* line 207, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 233, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .active {
   background: #478BF9 !important;
 }
 
-/* line 210, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 236, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section {
   position: relative;
   max-width: 1920px;
   height: 960px;
 }
 
-/* line 215, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 241, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper {
   position: absolute;
   top: 296px;
@@ -700,7 +709,7 @@ a {
   font-weight: 500;
 }
 
-/* line 222, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 248, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper h1 {
   margin-bottom: 24px;
   line-height: 96px;
@@ -708,12 +717,12 @@ a {
   font-size: 96px;
 }
 
-/* line 227, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 253, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper h1 span {
   color: #478BF9;
 }
 
-/* line 230, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 256, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper p {
   font-size: 32px;
   color: #fff;
@@ -721,7 +730,7 @@ a {
   margin-bottom: 48px;
 }
 
-/* line 235, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 261, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper div {
   display: inline-flex;
   align-items: center;
@@ -732,14 +741,14 @@ a {
   border-radius: 48px;
 }
 
-/* line 244, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 270, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__left-wrapper div a span {
   color: #fff;
   font-size: 24px;
   font-weight: 600;
 }
 
-/* line 249, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 275, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper {
   position: absolute;
   top: 140px;
@@ -748,7 +757,7 @@ a {
   height: 659px;
 }
 
-/* line 255, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 281, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper h2 {
   color: #fff;
   text-align: center;
@@ -757,7 +766,7 @@ a {
   margin-bottom: 24px;
 }
 
-/* line 261, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 287, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container {
   position: relative;
   z-index: 6;
@@ -771,7 +780,7 @@ a {
   background: rgba(255, 255, 255, 0.12) !important;
 }
 
-/* line 272, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 298, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container-items {
   position: relative;
   width: 492px;
@@ -781,12 +790,12 @@ a {
   padding-right: 20px;
 }
 
-/* line 31, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 38, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container-items::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 34, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 41, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container-items::-webkit-scrollbar-track {
   margin-top: 96px;
   margin-bottom: 96px;
@@ -796,7 +805,7 @@ a {
   border-radius: 10px;
 }
 
-/* line 42, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 49, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container-items::-webkit-scrollbar-thumb {
   height: 10px;
   border: 4px solid rgba(0, 0, 0, 0);
@@ -805,12 +814,12 @@ a {
   background-color: #478BF9;
 }
 
-/* line 49, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 56, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container-items::-webkit-scrollbar-button {
   display: none;
 }
 
-/* line 280, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 306, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container-items__item {
   z-index: 2;
   display: flex;
@@ -825,7 +834,7 @@ a {
   margin-bottom: 16px;
 }
 
-/* line 292, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 318, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container-items__item p {
   font-size: 24px;
   font-weight: 400;
@@ -833,13 +842,13 @@ a {
   margin-bottom: 14px;
 }
 
-/* line 297, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 323, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .main-section__right-wrapper .blog-container-items__item span {
   font-size: 14px;
   opacity: 60%;
 }
 
-/* line 301, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 327, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 footer {
   position: relative;
   max-width: 1920px;
@@ -851,80 +860,566 @@ footer {
   background: #1E1231;
 }
 
-/* line 312, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 338, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section {
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: end;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* line 319, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.footer-section__column {
-  margin-right: 217px;
-}
-
-/* line 321, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 347, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column li {
   margin-right: 40px;
 }
 
-/* line 323, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 349, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column li:first-child {
   text-decoration: underline !important;
   color: #478BF9 !important;
 }
 
-/* line 326, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 352, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column:last-child {
   margin-right: 0;
 }
 
-/* line 330, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 356, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column .social-media-block__title h3 {
   text-align: right;
   color: #fff;
   margin-bottom: 14px;
 }
 
-/* line 334, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
-.footer-section__column .social-media-block__title img {
-  background: purple;
-}
-
-/* line 337, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 361, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column .social-media-block__icons img {
   margin-right: 8px;
   width: 32px;
   height: 32px;
 }
 
-/* line 341, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 365, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column .social-media-block__icons img:hover {
   background-color: red;
   border-radius: 15px;
 }
 
-/* line 344, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 368, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .footer-section__column .social-media-block__icons:last-child {
   margin-right: 0;
 }
 
-/* line 346, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 370, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .copyright {
   position: relative;
   margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 350, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+/* line 374, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
 .copyright p {
+  font-family: "Futura PT Medium";
+  font-size: 12px;
   margin-top: 8px;
   text-align: center;
   color: #fff;
   opacity: 40%;
+}
+
+/* line 382, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.header-menu__icon {
+  display: none;
+}
+
+/* line 385, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+.invisible {
+  display: none !important;
+}
+
+@media (max-width: 570px) {
+  /* line 391, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body {
+    max-width: 320px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  /* line 396, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body .circle {
+    position: absolute;
+    top: 960px;
+    left: 177px;
+    width: 240px;
+    height: 240px;
+  }
+  /* line 403, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body .ellipse {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 90px;
+    width: 81px;
+    height: 466px;
+  }
+  /* line 411, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body .background-banner {
+    z-index: -1;
+    position: absolute;
+    margin: 0 auto;
+    top: 180px;
+    left: 0px;
+    width: 165px;
+    height: 659px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    mask-image: linear-gradient(to left, transparent, #000);
+    transform: rotate(90deg);
+  }
+  /* line 426, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body .background-banner__column {
+    position: relative;
+    opacity: 70%;
+    width: 110px;
+    margin: 0;
+  }
+  /* line 431, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body .background-banner__column .background-wrap {
+    position: relative;
+    display: flex;
+    width: 55px;
+    flex-direction: column;
+  }
+  /* line 436, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body .background-banner__column .background-wrap:before, body .background-banner__column .background-wrap:after {
+    height: 10%;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+  }
+  /* line 443, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body .background-banner__column .background-wrap__items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 14px;
+    counter-reset: item;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  /* line 450, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body .background-banner__column .background-wrap__items img {
+    width: 49px;
+    height: 49px;
+    transform: rotate(-90deg);
+  }
+  /* line 454, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  body .background-banner__column .background-wrap .item {
+    flex: 0 0 auto;
+    width: 49px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+  }
+  /* line 463, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  header {
+    margin-bottom: 70px;
+  }
+  /* line 466, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .container {
+    position: relative;
+    width: 300px;
+    align-items: center;
+    overflow: hidden;
+  }
+  /* line 475, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-container {
+    margin-top: 10px;
+    border: 2px solid 9DADF2;
+    background-color: #110A1D;
+    height: 56px;
+    border-radius: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 14px 10px 14px;
+  }
+  /* line 489, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-container__column a .main-section__logo {
+    width: 165px !important;
+    height: 18px;
+  }
+  /* line 492, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-container__column .nav-menu {
+    display: none;
+  }
+  /* line 495, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .lang-box {
+    width: 36px;
+    height: 36px;
+    border-radius: 24px;
+    display: flex;
+    align-content: center;
+    padding: 8.63px;
+  }
+  /* line 502, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .lang-box span {
+    display: none;
+  }
+  /* line 505, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .buttons-section {
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 508, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .buttons-section #log-in {
+    display: none;
+  }
+  /* line 510, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .buttons-section #sign-in {
+    display: none;
+  }
+  /* line 512, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .buttons-section__item {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    border-radius: 24px;
+    position: relative;
+    color: #fff;
+    border: 2px solid #9DADF2;
+  }
+  /* line 521, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 523, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(6px) rotate(-45deg);
+  }
+  /* line 525, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 527, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(-8px) rotate(45deg);
+  }
+  /* line 529, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-mobile {
+    -webkit-transition: all 1s ease 1s;
+    -moz-transition: all 1s ease 1s;
+    -ms-transition: all 1s ease 1s;
+    -o-transition: all 1s ease 1s;
+    transition: all 1s ease 1s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  /* line 535, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-mobile .nav-menu {
+    margin-bottom: 30px;
+  }
+  /* line 537, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-mobile .nav-menu__list {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 540, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-mobile .nav-menu__list-item {
+    font-size: 18px;
+    width: 300px;
+    padding: 13px 20px 13px 20px;
+    height: 50px;
+    border: 2px solid #478BF9;
+    border-radius: 28px;
+    margin-bottom: 5px;
+  }
+  /* line 548, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-mobile__button {
+    font-size: 18px;
+    width: 300px;
+    padding: 13px 20px 13px 20px;
+    height: 50px;
+    border: 2px solid #478BF9;
+    background-color: #110A1D;
+    border-radius: 28px;
+    margin-bottom: 5px;
+  }
+  /* line 559, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .nav-menu_active {
+    right: 0px;
+  }
+  /* line 561, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-menu__icon {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 21px;
+    height: 14px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  /* line 571, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-menu__icon span {
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    top: 6px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  /* line 579, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-menu__icon span:first-child {
+    top: 0;
+  }
+  /* line 581, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-menu__icon span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+  /* line 585, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-menu__icon.active span {
+    -webkit-transition: scale(0);
+    -moz-transition: scale(0);
+    -ms-transition: scale(0);
+    -o-transition: scale(0);
+    transition: scale(0);
+  }
+  /* line 588, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-menu__icon.active span:first-child {
+    -webkit-transition: rotate(-45deg);
+    -moz-transition: rotate(-45deg);
+    -ms-transition: rotate(-45deg);
+    -o-transition: rotate(-45deg);
+    transition: rotate(-45deg);
+    top: 8px;
+  }
+  /* line 591, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .header-menu__icon.active span:last-child {
+    -webkit-transition: rotate(45deg);
+    -moz-transition: rotate(45deg);
+    -ms-transition: rotate(45deg);
+    -o-transition: rotate(45deg);
+    transition: rotate(45deg);
+    bottom: 8px;
+  }
+  /* line 594, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section {
+    position: relative;
+    max-width: 320px;
+    margin-bottom: 119px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 601, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__left-wrapper {
+    top: 0px;
+    width: 300px;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 230px;
+  }
+  /* line 607, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__left-wrapper h1 {
+    margin-bottom: 24px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 46px;
+    text-align: center;
+  }
+  /* line 613, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__left-wrapper h1 span {
+    color: #478BF9;
+  }
+  /* line 616, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__left-wrapper p {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    opacity: 60%;
+    margin-bottom: 24px;
+  }
+  /* line 622, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__left-wrapper div {
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 53px;
+    padding: 15px 56.5px;
+    border-radius: 48px;
+  }
+  /* line 630, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__left-wrapper div a span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  /* line 634, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__right-wrapper {
+    top: 0px;
+    width: 300px;
+    border: none;
+  }
+  /* line 638, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__right-wrapper h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  /* line 644, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__right-wrapper .blog-container {
+    position: relative;
+    z-index: 6;
+    width: 300px;
+    height: 421px;
+    border: 2px solid #478BF9;
+    border-radius: 50px;
+    padding: 10px;
+    padding-right: 6px;
+    background: rgba(255, 255, 255, 0.12) !important;
+  }
+  /* line 655, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__right-wrapper .blog-container-items {
+    position: relative;
+    width: 286px;
+    height: 421px;
+    padding-right: 6px;
+  }
+  /* line 661, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__right-wrapper .blog-container-items__item {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 274px;
+    height: 112px;
+    background: #1E1231;
+    border-radius: 40px;
+    color: #fff;
+    padding: 15px 35px;
+    margin-bottom: 10px;
+  }
+  /* line 673, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__right-wrapper .blog-container-items__item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+  /* line 678, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .main-section__right-wrapper .blog-container-items__item span {
+    font-family: "Futura PT Medium";
+    font-size: 14px;
+    opacity: 60%;
+  }
+  /* line 682, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  footer {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    border: 4px solid #478BF9;
+    border-top-right-radius: 64px;
+    border-top-left-radius: 64px;
+    border-bottom: none;
+    background: #1E1231;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  /* line 693, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  footer .container {
+    z-index: inherit;
+    margin: 0px auto;
+    padding: 0;
+  }
+  /* line 698, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  /* line 707, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__nav .nav-menu__list {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 710, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__nav .nav-menu__list-item {
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+  /* line 714, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column {
+    margin-bottom: 20px;
+  }
+  /* line 716, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column:first-child {
+    display: none;
+  }
+  /* line 718, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column li {
+    margin: 0;
+  }
+  /* line 720, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column li:first-child {
+    text-decoration: none !important;
+  }
+  /* line 722, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column:last-child {
+    margin-right: 0;
+  }
+  /* line 724, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column .social-media-block {
+    position: relative;
+  }
+  /* line 729, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column .social-media-block__title h3 {
+    text-align: left;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  /* line 733, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column .social-media-block__icons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 737, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column .social-media-block__icons img {
+    margin-right: 8px;
+    width: 27px;
+    height: 27px;
+  }
+  /* line 741, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column .social-media-block__icons img:hover {
+    background-color: red;
+    border-radius: 15px;
+  }
+  /* line 744, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .footer-section__column .social-media-block__icons:last-child {
+    margin-right: 0;
+  }
+  /* line 746, ../../../../../Projects/html/1/Main/TaskForVTOP3/sass/style.sass */
+  .copyright {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
