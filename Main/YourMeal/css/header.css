@@ -111,29 +111,13 @@
 }
 
 @media (min-width: 1360px) {
-    .header {
-        background-size: 2880px;
-        padding-bottom: 63px;
-        margin-bottom: 40px;
-    }
-
     .header__container {
-        max-width: calc(764px + var(--padding-container) * 2);
+        max-width: calc(784px + var(--padding-container) * 2);
     }
 
     .header__title-container {
-        padding-left: 326px;
+
         padding-top: 46px;
-        min-height: 326px;
-    }
-
-    .header__title {
-        font-size: 50px;
-        margin-bottom: 34px;
-    }
-
-    .header__appeal {
-        font-size: 16px;
-        line-height: 22px;
+        min-height: 346px;
     }
 }
