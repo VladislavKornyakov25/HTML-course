@@ -30,7 +30,6 @@
 }
 
 .order__wrap-title:focus-visible:after {
-
     outline-color: #FFAB08;
 }
 
@@ -177,6 +176,11 @@
 
     .order__wrap-title {
         margin-bottom: 12px;
+        pointer-events: none;
+    }
+
+    .order__wrap-title:focus-visible:after {
+        content: none;
     }
 
     .order__title {
